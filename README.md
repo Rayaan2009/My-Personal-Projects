@@ -1,4 +1,4 @@
-# My Personal Projecrs
+# My Personal Projects
 
 This repository groups together my personal learning and practice projects across multiple topics.
 
