@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.exe
+C/**/a.out
+CS50's_Introduction_Computer_Science/week-1-C/agree
