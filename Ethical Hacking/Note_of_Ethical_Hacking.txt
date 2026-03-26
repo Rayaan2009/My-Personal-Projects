@@ -1,0 +1,92 @@
+whois [website_name]
+
+dig [website_name]
+
+whois -v [website_name/domain_name]
+
+host [website_name]
+
+dig -mx [website_name] (For check mailing)
+
+arp -a
+
+touch [file_name] (For create file)
+
+echo > [file_name] [your_writing] (For write in file)
+
+cat [file_name] (For see file. )
+
+ls (For check how much file you have in your folder. )
+
+openssl genrsa -des3 -out [public_key_name].key 4096 (For genarate any key)
+
+openssl rsa -in [private_key_name] -pubout -out [public_key_name] (For genarate public key)
+
+openssl rsautl -encrypt -pubin -inkey [public_key_name] -in [text_file_name] -out [encrypted_file_name] (For encrypt file)
+
+openssl rsautl -decrypt -inkey [private_key_name] -in [encrypted_file_name] -out [decrypted_file_name] (For decrypt file)
+
+diff [file_name] [another_file_name] (For combination both files)
+
+openssl req -new -x509 -days 365 -key -[private_key_name] -out [certificate_name] (For create any certificate)
+
+openssl x509 -text -in [certificate_name] (For see for certificate)
+
+md5sum [certificate_name] (For Hashing)
+
+sslscan www.[website_name].com/.org/.xyz(etc) (For check security)
+
+-----------------------------------------NMAP--------------------------------------
+
+apt-get install nmap (Install NMAP) ***Warning*** (Run this code in root terminal)
+
+nmap [website/ip_address] (For scan any website)
+
+nmap -iL [file_name] (For scan from any txt file)
+
+nmap -exclude [ip_address]
+
+nmap -sS [ip_address] ***Warning*** (Run this code in root terminal)
+
+nmap -sT [ip_address] (For TCP connection port)
+
+nmap -sU [ip_address] ***Warning*** (you need to run this code in root terminal) (For UDP connection port)
+
+nmap -sA [ip_address] ***Warning*** (you need to run this code in root terminal) (For Acknowledgment connection port)
+
+nmap -sW [ip_address] ***Warning*** (you need to run this code in root terminal) (For windows connection port)
+
+nmap -sM [ip_address] ***Warning*** (you need to run this code in root terminal) (For main connection port)
+
+nmap -sL [ip_address] (For list targets)
+
+nmap -sN [ip_address] ***Warning*** (you need to run this code in root terminal) (For disabling port scanning or host discovery only)
+
+nmap -n [ip_address] (For hostname resolution)
+
+nmap -PR [your_own_network_ip_address] (For local network)
+
+nmap [your_own_network_ip_address] -p21
+
+nmap [your_own_network_ip_address] -p21-100
+
+nmap [your_own_network_ip_address] -F (For fast scan)
+
+nmap [website_ip_address] -sV (For service version)
+
+nmap [website_ip_address] -A (For aggress scan)
+
+nmap [website_ip_address] -O (For OS detection)
+
+
+-----------------------------------------NMAP--------------------------------------
+
+
+
+
+
+
+
+
+
+

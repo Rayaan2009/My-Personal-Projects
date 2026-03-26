@@ -1,0 +1,19 @@
+.card { 
+    /* background-color: black; */
+    color: white;
+}
+
+.bg-success {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bd-violet-bg);
+    --bs-tooltip-color: var(--bs-white);
+}
+
+hr{
+    width: 5cm;
+    margin-left: 15cm;
+}

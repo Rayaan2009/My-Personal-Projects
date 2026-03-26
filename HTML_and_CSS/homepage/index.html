@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rayaan's Homepage</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Rayaan's Space</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="static/about_me.html">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="static/projects.html">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="static/blog.html">Blog</a>
+                            </li>
+                        </ul>
+
+                        <!-- Google Search Bar -->
+                        <form class="d-flex mt-3" role="search" action="https://www.google.com/search" method="GET" target="_blank">
+                            <input autocomplete="off" autofocus ="form-control me-2" type="search" name="q" placeholder="Search Google..." aria-label="Search" required>
+                            <button class="btn btn-success" type="submit">Go</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="content-wrapper">
+            <!-- Hero Section -->
+            <header class="text-center text-white bg-dark py-5">
+                <div class="container">
+                    <h1 class="display-4">Welcome to My World!</h1>
+                    <p class="lead">Exploring Python, C, Web Development, IoT, Robotics, and Football.</p>
+                    <a href="#" class="btn btn-primary btn-lg">Discover More</a>
+                </div>
+            </header>
+
+            <!-- Grid Section -->
+            <section class="container my-5">
+                <div class="row text-center g-4">
+                    <div class="col-md-4">
+                        <div class="card p-4 shadow-sm h-100">
+                            <h3>About Me</h3>
+                            <p>Get to know more about my journey, interests, and goals.</p>
+                            <a href="static/about_me.html" class="btn btn-outline-dark">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-4 shadow-sm h-100">
+                            <h3>Projects</h3>
+                            <p>Check out my programming projects, IoT creations, and web designs.</p>
+                            <a href="static/projects.html" class="btn btn-outline-dark">View Projects</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-4 shadow-sm h-100">
+                            <h3>Blog</h3>
+                            <p>Read my thoughts on technology, football, and personal experiences.</p>
+                            <a href="static/blog.html" class="btn btn-outline-dark">Visit Blog</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center bg-dark text-white py-3">
+            <p>© 2025 Rayaan Bin Saifullah. All Rights Reserved.</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

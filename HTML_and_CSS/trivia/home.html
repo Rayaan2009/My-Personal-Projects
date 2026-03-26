@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .options button {
+            margin: 5px;
+            padding: 10px;
+            border: none;
+            background-color: lightblue;
+            cursor: pointer;
+        }
+        .options button.correct {
+            background-color: lightgreen;
+        }
+        .options button.wrong {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Trivia!</h1>
+        
+        <h2>Part 1: Multiple Choice</h2>
+        <div class="question">What is the capital of France?</div>
+        <div class="options">
+            <button onclick="checkAnswer(this, false)">Berlin</button>
+            <button onclick="checkAnswer(this, false)">Madrid</button>
+            <button onclick="checkAnswer(this, true)">Paris</button>
+            <button onclick="checkAnswer(this, false)">Rome</button>
+        </div>
+        
+        <h2>Part 2: Free Response</h2>
+        <div class="question">What is 2 + 2?</div>
+        <input type="text" id="answer" placeholder="Your answer">
+        <button onclick="checkFreeResponse()">Check Answer</button>
+        <p id="response"></p>
+    </div>
+
+    <script>
+        function checkAnswer(button, isCorrect) {
+            if (isCorrect) {
+                button.classList.add("correct");
+            } else {
+                button.classList.add("wrong");
+            }
+        }
+
+        function checkFreeResponse() {
+            let answer = document.getElementById("answer").value.trim();
+            let response = document.getElementById("response");
+            if (answer === "4") {
+                response.textContent = "Correct!";
+                response.style.color = "green";
+            } else {
+                response.textContent = "Try again!";
+                response.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>
